@@ -86,7 +86,7 @@ Built by [Shad Vick](https://github.com/shadvick).
 
 I'm a software architect and developer focused on practical business software, integrations, and tools that solve real workflow problems.
 
-Bug reports and useful feature requests are welcome through [GitHub Issues](https://github.com/shadvick/touch-log/issues).
+Bug reports and useful feature requests are welcome through [GitHub Issues](https://github.com/shadvick/client-email-log/issues).
 
 ## License
 

@@ -5,7 +5,7 @@
   "description": "Count client emails by month — sent, received, replies, and threads. Compare this year with last year. Everything stays local.",
   "version": "0.1.0",
   "author": "Shad Vick",
-  "homepage_url": "https://github.com/shadvick/touch-log",
+  "homepage_url": "https://github.com/shadvick/client-email-log",
   "browser_specific_settings": {
     "gecko": {
       "id": "touch-log@addons.thunderbird.net",
