@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Touch Log</title>
+  <link rel="stylesheet" href="page.css">
+</head>
+<body>
+  <header class="ctl-header">
+    <div>
+      <h1>Touch Log</h1>
+      <p class="ctl-sub">Local Thunderbird counts only. No cloud, no AI.</p>
+    </div>
+    <button type="button" id="btn-folders" class="ctl-btn ctl-btn-ghost">Edit folders</button>
+  </header>
+
+  <section id="saved-tabs" class="ctl-tabs"></section>
+
+  <section id="suggest" class="ctl-suggest ctl-hidden">
+    <span id="suggest-label" class="ctl-suggest-label">Most touched</span>
+    <div id="suggest-list" class="ctl-tabs"></div>
+  </section>
+
+  <section id="saved-editor" class="ctl-card ctl-hidden">
+    <h2>Folders</h2>
+    <p class="ctl-hint">Name the folder you want to count. Domain is only for Search all accounts — it matches From/To addresses like @example.com, not words in the body.</p>
+    <div id="saved-list"></div>
+    <form id="saved-form" class="ctl-form">
+      <label>Name <input type="text" id="saved-name" required placeholder="North Clinic"></label>
+      <label>Domain <input type="text" id="saved-domains" placeholder="example.com"></label>
+      <button type="submit" class="ctl-btn ctl-btn-primary">Add folder</button>
+    </form>
+  </section>
+
+  <section class="ctl-card">
+    <div class="ctl-toolbar">
+      <label class="ctl-field">
+        Year
+        <select id="year"></select>
+      </label>
+      <fieldset class="ctl-mode">
+        <legend>Look in</legend>
+        <label><input type="radio" name="mode" value="folder" checked> A Thunderbird folder</label>
+        <label id="all-accounts-option" class="ctl-hidden">
+          <input type="radio" name="mode" value="all-accounts"> Search all accounts
+        </label>
+      </fieldset>
+      <select id="mail-folder" class="ctl-folder-select"></select>
+      <button type="button" id="btn-scan" class="ctl-btn ctl-btn-primary">Scan</button>
+      <span id="status" class="ctl-status"></span>
+      <p id="all-accounts-note" class="ctl-hint ctl-note ctl-hidden">From/To @domain in every account. No subject/body search.</p>
+    </div>
+  </section>
+
+  <section id="results" class="ctl-hidden">
+    <div id="summary" class="ctl-summary"></div>
+    <div class="ctl-results-split">
+      <div class="ctl-card">
+        <h2>By month</h2>
+        <div id="months"></div>
+      </div>
+      <div class="ctl-card">
+        <h2 id="log-title">Message log</h2>
+        <div id="log"></div>
+      </div>
+    </div>
+  </section>
+
+  <script type="module" src="page.js"></script>
+</body>
+</html>
