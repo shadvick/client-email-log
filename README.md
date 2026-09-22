@@ -1,49 +1,93 @@
-# Touch Log
+# Client Email Log
 
-A small Thunderbird add-on. It counts email touches per folder — by month, with a date/subject log.
+**A free, private Thunderbird add-on for seeing your email activity with a client over time.**
 
-It stays on your machine. Nothing is uploaded.
+Client Email Log counts the messages already in Thunderbird and shows them month by month: sent, received, replies, and threads.
 
-## What you get
+Compare this year with last year, open a month to see the messages behind the count, and open any message directly in Thunderbird.
 
-- Add folders (name, optional domain). The list lives in that Thunderbird profile only.
-- Scan a Thunderbird folder you already file mail into
-- If you have more than one account: **Search all accounts** for that domain
-- Year totals: touches, sent, received, your replies, threads
-- Month bars with this-year vs last-year counts
-- Click a month, then click a row to open the message
+Everything runs locally. Nothing is uploaded.
 
-## Load it in Thunderbird
+## Who it's for
 
-1. Thunderbird → the menu (☰) → **Add-ons and Themes**
-2. Gear icon → **Debug Add-ons**
-3. **Load Temporary Add-on…**
-4. Pick `manifest.json` in this folder
+Built for agencies, consultants, freelancers, and small businesses that either:
 
-The add-on lasts until Thunderbird restarts. For a keep-it install later, zip this folder’s contents (not the parent folder) and rename the zip to `.xpi`, then install from the same gear menu.
+- file email into a folder for each client, or
+- regularly email the same company or contact throughout the year.
 
-Click **Touch Log** in the toolbar, or the **Touch Log** button in the spaces bar on the left.
+It gives you a simple record of the email work without requiring a timer.
 
-## How to use it
+## What it does
 
-1. Add a folder (name, and a domain if you want all-account search)
-2. Pick a year
-3. Choose **A Thunderbird folder** if you already file that mail into a folder (best, fastest)
-4. Or, if you have more than one account, choose **Search all accounts**
-5. Click **Scan**
+- Save folders with a name and optional company domain
+- Scan an existing Thunderbird folder, including subfolders
+- Count sent and received messages
+- Count replies and conversation threads
+- View activity month by month
+- Compare this year with last year
+- Click a month to see the underlying messages
+- View From, To, and a short preview
+- Open the original message directly in Thunderbird
+- Find frequently contacted company domains and email addresses
+- Search across accounts by company domain or full email address when Thunderbird has multiple accounts
 
-Folder scan treats everything in that Thunderbird folder as a match. Search all accounts matches From/To addresses at the domain (for example `@example.com`) across every account. It does not search subject or body. Skips junk, trash, and drafts.
+Search all accounts matches From/To addresses. It does not search message subjects or bodies. Junk, trash, and drafts are skipped.
 
-## Edit folders
+The button in Thunderbird's spaces bar is labeled **Touch Log**. That is the short name. The add-on name is Client Email Log.
 
-Use **Edit folders** to add or remove folders. Each person’s list stays on their computer.
+## Not a time tracker
+
+Client Email Log counts email activity. It does not track or estimate hours.
+
+If you use email history as part of understanding how much communication a client required, this gives you the record without running a timer.
 
 ## Privacy
 
-Touch Log reads mail only inside Thunderbird, on that computer. It does not upload anything. Details are in [PRIVACY.md](PRIVACY.md).
+Client Email Log runs inside Thunderbird on your computer.
 
-## Source
+**Nothing is uploaded.**
 
-[github.com/shadvick/touch-log](https://github.com/shadvick/touch-log)
+Your saved folder list and cached results stay in your Thunderbird profile.
 
-Made by Shad Vick. MIT license.
+See [PRIVACY.md](PRIVACY.md) for details.
+
+## Install for development
+
+1. Open Thunderbird.
+2. Open **Add-ons and Themes**.
+3. Click the gear icon and choose **Debug Add-ons**.
+4. Click **Load Temporary Add-on**.
+5. Select `manifest.json` from this repository.
+
+A temporary installation lasts until Thunderbird restarts.
+
+Public installation instructions will be added after the extension is available through Thunderbird Add-ons.
+
+## Permissions
+
+Client Email Log requests Thunderbird permissions needed to:
+
+- read account and folder information
+- read messages locally
+- save your folder settings locally
+- open messages and the Client Email Log page in Thunderbird tabs
+
+The extension does not transmit message data.
+
+## Status
+
+**0.1.0 — Initial public release**
+
+The project is being prepared for submission to Thunderbird Add-ons.
+
+## Author
+
+Built by [Shad Vick](https://github.com/shadvick).
+
+I'm a software architect and developer focused on practical business software, integrations, and tools that solve real workflow problems.
+
+Bug reports and useful feature requests are welcome through [GitHub Issues](https://github.com/shadvick/touch-log/issues).
+
+## License
+
+MIT License. See [LICENSE](LICENSE).

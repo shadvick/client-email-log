@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Touch Log",
+  "name": "Client Email Log",
   "short_name": "Touch Log",
-  "description": "Count email touches by month from a Thunderbird folder, or search a domain across all accounts.",
+  "description": "Count client emails by month — sent, received, replies, and threads. Compare this year with last year. Everything stays local.",
   "version": "0.1.0",
   "author": "Shad Vick",
   "homepage_url": "https://github.com/shadvick/touch-log",
@@ -24,7 +24,7 @@
     "scripts": ["background.js"]
   },
   "browser_action": {
-    "default_title": "Touch Log",
+    "default_title": "Client Email Log",
     "default_icon": {
       "16": "icons/icon-16.png",
       "32": "icons/icon-32.png"

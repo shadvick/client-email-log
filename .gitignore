@@ -1,3 +1,6 @@
 Thumbs.db
 .DS_Store
 *.xpi
+
+# Local planning notes. Not part of the add-on.
+docs/
